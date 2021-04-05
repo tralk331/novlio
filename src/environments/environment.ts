@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCcaiGWtm7XJl7bcfSP1VJuubOprmRdMNQ",
+    authDomain: "novlio.firebaseapp.com",
+    projectId: "novlio",
+    storageBucket: "novlio.appspot.com",
+    messagingSenderId: "1005672147753",
+    appId: "1:1005672147753:web:05a5fbf85d9892f3c4a538",
+    measurementId: "G-XQ9YZNGJ3F"
+  }
 };
 
 /*

@@ -1,0 +1,8 @@
+<div class="series-container">
+    <div class="series-button new-series" (click)="onAddSeries()">
+        <div>+</div>
+    </div>
+    <div class="series-button" *ngFor="let series of seriesService.seriesList$ | async">
+        {{series.name}}
+    </div>
+</div>

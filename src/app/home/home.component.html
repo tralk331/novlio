@@ -1,0 +1,25 @@
+<div class="home">
+  <div class="header">
+    <span class="title">Novlio</span>
+    <button *ngIf="userService.user$ | async; else dashboard" (click)="onDashboard()">Dashboard</button>
+    <ng-template #dashboard><button (click)="onSignIn()">Sign In</button></ng-template>
+  </div>
+  <div class="landing">
+    <div class="text">With novlio, writers can enjoy a variety of tools to create immersive stories</div>
+    <img src="assets/note.svg">
+  </div>
+  <div class="features">
+    <div class="feature">
+      <div class="title">Organize your books into series</div>
+      <img src="#" alt="placeholder">
+    </div>
+    <div class="feature">
+      <div class="title">Powerful text editor</div>
+      <img src="#" alt="placeholder">
+    </div>
+    <div class="feature">
+      <div class="title">Connect with other writers</div>
+      <img src="#" alt="placeholder">
+    </div>
+  </div>
+</div>

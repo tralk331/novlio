@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "novlio": {
+      "hosting": {
+        "novlio-web": [
+          "novlio"
+        ]
+      }
+    }
+  }
+}

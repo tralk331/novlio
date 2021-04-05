@@ -1,0 +1,11 @@
+@import "../scss_vars.scss";
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  width: 80vw;
+  height: 100vh;
+  background-color: rgba($color5, 0.25);
+  padding: 15px;
+}
