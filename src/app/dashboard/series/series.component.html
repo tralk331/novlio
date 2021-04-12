@@ -1,8 +1,8 @@
 <div class="series-container">
     <div class="series-button new-series" (click)="onAddSeries()">
-        <div>+</div>
+        <span>+</span>
     </div>
     <div class="series-button" *ngFor="let series of seriesService.seriesList$ | async">
-        {{series.name}}
+        <span>{{series.name}}</span>
     </div>
 </div>
