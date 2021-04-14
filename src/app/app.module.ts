@@ -28,7 +28,7 @@ import { BookComponent } from './dashboard/book/book.component';
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]

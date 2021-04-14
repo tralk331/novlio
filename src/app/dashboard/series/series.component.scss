@@ -12,7 +12,8 @@
     height: 150px;
     background-color: $color1;
     color: white;
-    font-size: 3rem;
+    font-size: calc(1.2rem + 3vw);
+    text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,6 +28,51 @@
     grid-template-columns: repeat(auto-fit, 300px);
     .series-button {
       height: 300px;
+      font-size: 3vw;
+    }
+  }
+}
+.new-series-popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: $color1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  .close-button {
+    background: none;
+    border: 0;
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+    align-self: flex-end;
+    &:hover {
+      color: $color5;
+    }
+  }
+  form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+    label {
+      font-family: "Quicksand";
+      font-size: 2rem;
+    }
+    input,
+    textarea {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    textarea {
+      height: 40%;
+    }
+    input[type="submit"] {
+      margin-top: auto;
     }
   }
 }

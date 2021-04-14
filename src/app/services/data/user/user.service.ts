@@ -10,6 +10,7 @@ import {User} from '../../../interfaces/User'
 })
 export class UserService {
 
+  //Contains user data
   user$: Observable<any>;
   constructor(
       private firebaseAuth: AngularFireAuth,

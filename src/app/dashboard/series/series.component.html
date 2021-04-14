@@ -1,8 +1,23 @@
-<div class="series-container">
-    <div class="series-button new-series" (click)="onAddSeries()">
+
+<!--Series grid-->
+<div class="series-container" *ngIf="!this.isPopup; else elseBlock">
+    <div class="series-button new-series" (click)="onToggleAddSeries()">
         <span>+</span>
     </div>
     <div class="series-button" *ngFor="let series of seriesService.seriesList$ | async">
-        <span>{{series.name}}</span>
+        <span>{{series.title}}</span>
     </div>
 </div>
+<!--New series popup (fixed position)-->
+<ng-template #elseBlock>
+    <div class="new-series-popup">
+        <button class="material-icons close-button" (click)="onToggleAddSeries()">close</button>
+        <form #formData="ngForm" class="new-series-form" (ngSubmit)="onSubmitSeries(formData)">
+            <label for="title">Title</label>
+            <input ngModel required id="title" name="title" type="text" placeholder="Title">
+            <label for="description">Description</label>
+            <textarea ngModel required id="description"name="description" placeholder="Write a description about this series here"></textarea>
+            <input type="submit" value="Create new series">
+        </form>
+    </div>
+</ng-template>

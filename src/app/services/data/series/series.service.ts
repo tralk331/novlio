@@ -8,6 +8,8 @@ import { of} from 'rxjs'
   providedIn: 'root'
 })
 export class SeriesService {
+  //List of all the series
+  //TODO: cache results for some time to optimize use of database
   seriesList$: Observable<any[] | null>
   constructor(private userService: UserService, private aFirestore: AngularFirestore) 
   {
