@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { SeriesService } from 'src/app/services/data/series.service';
+import { SeriesService } from 'src/app/services/data/series/series.service';
 import {take} from 'rxjs/operators'
 import {forkJoin} from 'rxjs'
-import { UserService } from 'src/app/services/data/user.service';
+import { UserService } from 'src/app/services/data/user/user.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 import {Series} from '../../interfaces/Series'
 import firebase  from 'firebase/app';

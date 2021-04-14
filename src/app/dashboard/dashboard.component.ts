@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../services/data/user.service';
+import { UserService } from '../services/data/user/user.service';
 import {Router, RouteReuseStrategy} from '@angular/router'
 @Component({
   selector: 'app-dashboard',

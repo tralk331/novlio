@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthFormComponent } from './auth-form/auth-form.component';
 import { FirebaseService } from './services/auth/firebase.service';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { HomeComponent } from './home/home.component';
@@ -17,7 +16,6 @@ import { BookComponent } from './dashboard/book/book.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AuthFormComponent,
     HomeComponent,
     DashboardComponent,
     NavComponent,

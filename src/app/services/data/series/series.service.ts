@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import {User} from '../../interfaces/User'
-import { UserService } from './user.service';
+import {User} from '../../../interfaces/User'
+import {UserService} from '../user/user.service'
 import {AngularFirestore} from '@angular/fire/firestore'
 import { of} from 'rxjs'
 @Injectable({
